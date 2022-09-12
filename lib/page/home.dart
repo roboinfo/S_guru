@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:s_guru/page/wisdom.dart';
+import 'suryanamaskar.dart';
 
 // import 'package:v_choice/page/favScreen.dart';
 
@@ -67,9 +68,9 @@ class _MyHomePageState extends State<MyHomePage> {
           label: 'Home',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.search,
+          icon: Icon(Icons.wb_sunny,
           ),
-          label: 'Search',
+          label: 'Yoga',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.video_collection),
@@ -92,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
       case 0:
         return const Wisdom();
       case 1:
-        return const Wisdom();
+        return const SuryaNamaskar();
       // case 2:
       //   return FavScreen();
       // case 3:

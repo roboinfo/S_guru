@@ -1,71 +1,4 @@
-// import 'package:flutter/material.dart';
-// import 'package:s_guru/page/home.dart';
-// import 'package:s_guru/page/mainslider.dart';
-// import 'home.dart';
-//
-// class Wisdom extends StatefulWidget {
-//   const Wisdom({Key? key}) : super(key: key);
-//
-//   @override
-//   State<Wisdom> createState() => _WisdomState();
-// }
-//
-//
-// class _WisdomState extends State<Wisdom> {
-//   final TextEditingController _textEditingController = TextEditingController();
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.white,
-//       appBar: AppBar(
-//         title: const Text('Voter\'s Choice'),
-//         leading: IconButton(
-//           icon: const Icon(Icons.arrow_back),
-//           onPressed: () {
-//             Navigator.of(context).pop();
-//             Navigator.push(
-//               context,
-//               MaterialPageRoute(builder: (context) => home()),
-//             );
-//           },
-//         ),
-//       ),
-//       body: SingleChildScrollView(
-//         child: Column(
-//           children: <Widget>[
-//             Padding(
-//               padding: const EdgeInsets.all(9.0),
-//               child: Container(
-//                 width: 600,
-//                 decoration: BoxDecoration(
-//                     color: Color.fromRGBO(0, 0, 0, 0.10),
-//                     borderRadius: BorderRadius.circular(20)),
-//                 child: TextField(
-//                   controller: _textEditingController,
-//                   decoration: const InputDecoration(
-//                     icon: Icon(
-//                       Icons.search,
-//                       color: Colors.black,
-//                     ),
-//                     border: InputBorder.none,
-//                     enabledBorder: InputBorder.none,
-//                     errorBorder: InputBorder.none,
-//                     focusedBorder: InputBorder.none,
-//                     contentPadding: EdgeInsets.all(15),
-//                     hintText: "Type Here To Search",
-//                     hintStyle: TextStyle(color: Colors.black),
-//                   ),
-//                 ),
-//               ),
-//             ),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:s_guru/page/mainslider.dart';
 import 'package:page_transition/page_transition.dart';
@@ -108,7 +41,6 @@ class _WisdomState extends State<Wisdom> {
           const SizedBox(
             height: 10,
           ),
-
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 0.0),
             child: Container(
@@ -124,7 +56,6 @@ class _WisdomState extends State<Wisdom> {
               ),
             ),
           ),
-
           const SizedBox(
             height: 5,
           ),
@@ -143,6 +74,7 @@ class _WisdomState extends State<Wisdom> {
                     // ),
                   ),
                 ),
+
                 Flexible(
                   flex: 1,
                   fit: FlexFit.tight,
@@ -165,28 +97,24 @@ class _WisdomState extends State<Wisdom> {
           const SizedBox(
             height: 5,
           ),
-          Flexible(
-            flex: 1,
-            fit: FlexFit.tight,
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                color: const Color.fromRGBO(0, 0, 0, 0.1),
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20.0),
+              color: const Color.fromRGBO(0, 0, 0, 0.1),
+            ),
+            //alignment: Alignment.center,
+            padding: const EdgeInsets.only(top: 1.0, left: 5.0, right: 5.0),
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                primary: const Color.fromRGBO(255, 255, 255, 1.0),
               ),
-              //alignment: Alignment.center,
-              padding: const EdgeInsets.only(top: 1.0, left: 5.0, right: 5.0),
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  primary: const Color.fromRGBO(255, 255, 255, 1.0),
-                ),
-                child: const Text(
-                  'View More',
-                  style: TextStyle(
-                      color: Colors.black45,
-                      //fontWeight: FontWeight.bold,
-                      fontSize: 22.0),
-                ),
+              child: const Text(
+                'View More',
+                style: TextStyle(
+                    color: Colors.black45,
+                    //fontWeight: FontWeight.bold,
+                    fontSize: 22.0),
               ),
             ),
           ),
@@ -425,60 +353,78 @@ class _WisdomState extends State<Wisdom> {
               ],
             ),
           ),
-
-          Flexible(
-            flex: 1,
-            fit: FlexFit.tight,
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                color: const Color.fromRGBO(0, 0, 0, 0.1),
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20.0),
+              color: const Color.fromRGBO(0, 0, 0, 0.1),
+            ),
+            //alignment: Alignment.center,
+            padding: const EdgeInsets.only(top: 1.0, left: 5.0, right: 5.0),
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                primary: const Color.fromRGBO(255, 255, 255, 1.0),
               ),
-              //alignment: Alignment.center,
-              padding: const EdgeInsets.only(top: 1.0, left: 5.0, right: 5.0),
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  primary: const Color.fromRGBO(255, 255, 255, 1.0),
-                ),
-                child: const Text(
-                  'Start Practice',
-                  style: TextStyle(
-                      color: Colors.black45,
-                      //fontWeight: FontWeight.bold,
-                      fontSize: 22.0),
-                ),
+              child: const Text(
+                'Start Practice',
+                style: TextStyle(
+                    color: Colors.black45,
+                    //fontWeight: FontWeight.bold,
+                    fontSize: 22.0),
               ),
             ),
           ),
-
           const SizedBox(
             height: 5,
           ),
 
-          Flexible(
-            flex: 1,
-            fit: FlexFit.tight,
 
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 0.0),
             child: Container(
               width: 200,
-              height: 500,
+              height: 550,
               padding: const EdgeInsets.only(top: 0.0, bottom: 7.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(0.0),
                 color: const Color.fromRGBO(0, 0, 0, 0.10),
               ),
-              child: Image.asset(
-                "assets/a2.png",
-                // height: 250,
-                width: double.maxFinite,
+              child: Center(
+                child: Material(
+                  color: Colors.white,
+                  elevation: 8,
+                  borderRadius: BorderRadiusDirectional.circular(28),
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  child: InkWell(
+                    splashColor: Colors.black26,
+                    onTap: () {},
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Ink.image(
+                          image: const AssetImage("assets/a2.png"),
+                          height: 500,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        const SizedBox(height: 6),
+                        const Text(
+                          'View More',
+                          style: TextStyle(
+                              color: Colors.black45,
+                              //fontWeight: FontWeight.bold,
+                              fontSize: 22.0),
+                        ),
+                        const SizedBox(height: 6),
+                      ],
+                    ),
+                  ),
+                ),
               ),
             ),
-
-
-
-
           ),
+
+
 
         ],
       ),

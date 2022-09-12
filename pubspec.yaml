@@ -73,6 +73,16 @@ flutter:
     - m3.png
     - m4.png
     - m5.png
+    - s1.png
+    - s2.png
+    - s3.png
+    - s4.png
+    - s5.png
+    - s6.png
+    - s7.png
+    - s8.png
+    - s9.png
+    - s10.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
