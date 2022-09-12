@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'suryanamaskar.dart';
 import 'package:s_guru/page/mainslider.dart';
 import 'package:page_transition/page_transition.dart';
 import 'home.dart';
@@ -397,7 +398,12 @@ class _WisdomState extends State<Wisdom> {
                   clipBehavior: Clip.antiAliasWithSaveLayer,
                   child: InkWell(
                     splashColor: Colors.black26,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const SuryaNamaskar()),
+                    );
+                    },
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [

@@ -26,7 +26,7 @@ class _SuryaNamaskarState extends State<SuryaNamaskar> {
               size: 30.0,
             ),
             Text(
-              '\t 12 Steps of Surya Namaskar',
+              '\t12 Surya Namaskar',
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.black45,
                   fontWeight: FontWeight.bold,
@@ -67,7 +67,7 @@ class _SuryaNamaskarState extends State<SuryaNamaskar> {
                   fit: FlexFit.tight,
                   child: RichText(
                     text: const TextSpan(
-                      text: '\n 1. Pranamasana – Prayer Pose\n',
+                      text: '\n \t 1. Pranamasana – Prayer Pose\n',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
